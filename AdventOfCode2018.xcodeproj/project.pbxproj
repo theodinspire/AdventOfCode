@@ -52,6 +52,7 @@
 		A08590B321B261B300FAD9EB /* AdventOfCode2018 */ = {
 			isa = PBXGroup;
 			children = (
+				A0EDE44921B43CE1005EBB24 /* Models */,
 				A08590BD21B261EE00FAD9EB /* Input */,
 				A08590B421B261B300FAD9EB /* AdventOfCode2018.h */,
 				A08590B521B261B300FAD9EB /* Info.plist */,
@@ -66,6 +67,13 @@
 				A08590BE21B2620900FAD9EB /* StreamReader.swift */,
 			);
 			path = Input;
+			sourceTree = "<group>";
+		};
+		A0EDE44921B43CE1005EBB24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
