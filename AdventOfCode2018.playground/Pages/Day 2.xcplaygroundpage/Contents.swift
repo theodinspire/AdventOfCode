@@ -1,5 +1,5 @@
 import Foundation
-import AdventOfCode2018
+//import AdventOfCode2018
 
 guard let filepath = Bundle.main.url(forResource: "02", withExtension: "txt"),
     let stream = StreamReader(url: filepath) else { abort() }

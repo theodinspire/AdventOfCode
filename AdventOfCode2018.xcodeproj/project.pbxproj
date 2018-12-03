@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A08590B621B261B300FAD9EB /* AdventOfCode2018.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode2018.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A08590BF21B2620900FAD9EB /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08590BE21B2620900FAD9EB /* StreamReader.swift */; };
 		A0C6E0B621B2644900510DE5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6E0B521B2644900510DE5 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -17,7 +16,6 @@
 		A08590B421B261B300FAD9EB /* AdventOfCode2018.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventOfCode2018.h; sourceTree = "<group>"; };
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* AdventOfCode2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdventOfCode2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		A08590BE21B2620900FAD9EB /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 		A0C6E0B521B2644900510DE5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 		A08590BD21B261EE00FAD9EB /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				A08590BE21B2620900FAD9EB /* StreamReader.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -156,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C6E0B621B2644900510DE5 /* Utilities.swift in Sources */,
-				A08590BF21B2620900FAD9EB /* StreamReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
