@@ -16,22 +16,22 @@ let sample = [
 let input = stream.filter { $0.count > 0 }
 
 // Part 1
-let counters = input.map { line in line.reduce(into: [Character: Int]()) { $0[$1, default: 0] += 1 } }
+let counters = input.map { line in line.reduce(into: [:]) { $0[$1, default: 0] += 1 } }
 
-let twos = counters.count(where: { item in item.values.contains { $0 == 2 } })
-let threes = counters.count(where: { item in item.values.contains { $0 == 3 } })
+let twos = counters.count(where: { $0.values.contains(2) })
+let threes = counters.count(where: { $0.values.contains(3) })
 
 print(twos * threes)
 
 // Part 2
 outer: for (i, this) in input.enumerated() {
     inner: for that in input[(i + 1)...] {
-        let zipper = zip(this, that)
+        let zipper = zip(this, that).lazy
 
-        guard (zipper.count(where: { $0.0 != $0.1 })) == 1 else { continue inner }
+        guard (zipper.count(where: { $0 != $1 })) == 1 else { continue inner }
 
-        print("Box Ids: ", this, that)
-        print("Common letters:", String(zipper.filter { $0.0 == $0.1 }.map { $0.0 }))
+        print("Box Ids:", this, that)
+        print("Common letters:", String(zipper.filter { $0 == $1 }.map { $0.0 }))
 
         break outer
     }
