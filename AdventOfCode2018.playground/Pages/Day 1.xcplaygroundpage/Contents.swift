@@ -1,5 +1,4 @@
 import Foundation
-//import AdventOfCode2018
 
 guard let filepath = Bundle.main.url(forResource: "01", withExtension: "txt"),
     let input = StreamReader(url: filepath) else { abort() }
@@ -10,7 +9,7 @@ let sample = [1, -2, 3, 1, 1, -2, 3, 1]
 print("Part 1")
 print(input.compactMap(Int.init).reduce(0, +))
 
- Part 2
+// Part 2
 print("\nPart 2")
 
 var set = Set<Int>()
