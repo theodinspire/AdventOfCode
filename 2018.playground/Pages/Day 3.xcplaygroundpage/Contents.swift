@@ -43,7 +43,7 @@ let input =
     stream.compactMap(Claim.init)
 
 // Part 1
-let cloth = input.lazy.reduce(into: Counter<Point>(), { $0.record(collection: $1.coveredPoints) })
+let cloth = input.lazy.reduce(into: Counter<Point>(), { $0.record(collection: $1.coveredPoints.lazy) })
 
 let overlaps = cloth.values.lazy.count(where: { $0 > 1 })
 

@@ -18,14 +18,12 @@ public struct Point {
     }
 }
 
-extension Point: CustomStringConvertible {
-    public var description: String {
-        return "(\(x), \(y))"
-    }
-}
-
 extension Point: Hashable {
+    public static func ==(this: Point, that: Point) -> Bool {
+        return this.x == that.x && this.y == that.y
+    }
+
     public var hashValue: Int {
-        return description.hashValue
+        return x << 16 + y
     }
 }
