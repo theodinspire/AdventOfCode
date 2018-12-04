@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */; };
-		A0B3AB8021B62F3900C06553 /* Sequence+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7F21B62F3900C06553 /* Sequence+Count.swift */; };
+		A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */; };
 		A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */; };
 		A0BE59AE21B67F89002D3301 /* Date+FormatInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */; };
 		C4265CEFF5EAFAE4553574DA /* Pods_AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
+		A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Compacted.swift"; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 		A08590B121B261B300FAD9EB /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +29,7 @@
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* 2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Counter.swift"; sourceTree = "<group>"; };
-		A0B3AB7F21B62F3900C06553 /* Sequence+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Count.swift"; sourceTree = "<group>"; };
+		A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Count.swift"; sourceTree = "<group>"; };
 		A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
 		A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormatInit.swift"; sourceTree = "<group>"; };
 		C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,8 +99,9 @@
 			children = (
 				A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */,
 				A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */,
-				A0B3AB7F21B62F3900C06553 /* Sequence+Count.swift */,
+				A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */,
 				A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */,
+				A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,8 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0BE59AE21B67F89002D3301 /* Date+FormatInit.swift in Sources */,
+				A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */,
 				A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */,
-				A0B3AB8021B62F3900C06553 /* Sequence+Count.swift in Sources */,
+				A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */,
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,

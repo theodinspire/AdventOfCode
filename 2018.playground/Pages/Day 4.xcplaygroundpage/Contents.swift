@@ -52,7 +52,7 @@ struct ShiftLog {
     static let awakeString = "wakes up"
 
     init?(from entry: String) {
-        guard let halves = ShiftLog.baseRegex.firstMatch(in: entry)?.captures.compactMap({ $0 }), halves.count == 2, let date = ShiftLog.dateFormatter.date(from: halves[0]) else { return nil }
+        guard let halves = ShiftLog.baseRegex.firstMatch(in: entry)?.captures.compacted(), halves.count == 2, let date = ShiftLog.dateFormatter.date(from: halves[0]) else { return nil }
 
         timestamp = date
 
