@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
-		A067432821B614BC009543B6 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432721B614BC009543B6 /* String+Subscripts.swift */; };
-		A067432A21B614DC009543B6 /* Sequence+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432921B614DC009543B6 /* Sequence+Count.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */; };
+		A0B3AB8021B62F3900C06553 /* Sequence+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7F21B62F3900C06553 /* Sequence+Count.swift */; };
+		A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */; };
 		C4265CEFF5EAFAE4553574DA /* Pods_AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
+		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
-		A067432721B614BC009543B6 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
-		A067432921B614DC009543B6 /* Sequence+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Count.swift"; sourceTree = "<group>"; };
 		A08590B121B261B300FAD9EB /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08590B421B261B300FAD9EB /* AdventOfCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventOfCode.h; sourceTree = "<group>"; };
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* 2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Counter.swift"; sourceTree = "<group>"; };
+		A0B3AB7F21B62F3900C06553 /* Sequence+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Count.swift"; sourceTree = "<group>"; };
+		A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
 		C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,15 +49,6 @@
 				127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A067432621B614A2009543B6 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A067432721B614BC009543B6 /* String+Subscripts.swift */,
-				A067432921B614DC009543B6 /* Sequence+Count.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A08590A721B261B300FAD9EB = {
@@ -78,7 +73,7 @@
 		A08590B321B261B300FAD9EB /* AdventOfCode */ = {
 			isa = PBXGroup;
 			children = (
-				A067432621B614A2009543B6 /* Extensions */,
+				A0B3AB7C21B62ED800C06553 /* Extensions */,
 				A0EDE44921B43CE1005EBB24 /* Models */,
 				A08590BD21B261EE00FAD9EB /* Input */,
 				A08590B421B261B300FAD9EB /* AdventOfCode.h */,
@@ -95,9 +90,20 @@
 			path = Input;
 			sourceTree = "<group>";
 		};
+		A0B3AB7C21B62ED800C06553 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */,
+				A0B3AB7F21B62F3900C06553 /* Sequence+Count.swift */,
+				A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A0EDE44921B43CE1005EBB24 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A05F6A7D21B61905006C85A2 /* Point.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A067432A21B614DC009543B6 /* Sequence+Count.swift in Sources */,
-				A067432821B614BC009543B6 /* String+Subscripts.swift in Sources */,
+				A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */,
+				A0B3AB8021B62F3900C06553 /* Sequence+Count.swift in Sources */,
+				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
+				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

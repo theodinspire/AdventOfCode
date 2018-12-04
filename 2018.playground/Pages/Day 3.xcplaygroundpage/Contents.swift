@@ -1,6 +1,8 @@
 import Foundation
 import AdventOfCode
 
+import Regex
+
 guard let filepath = Bundle.main.url(forResource: "03", withExtension: "txt"),
     let stream = StreamReader(url: filepath) else { abort() }
 
@@ -13,32 +15,20 @@ struct Claim {
     let width: Int
     let height: Int
 
-    var cutVertical: Range<Int> {
-        get { return top..<(top + height) }
+    var coveredPoints: [Point] {
+        get { return (left..<(left + width)).flatMap { x in (top..<(top  + height)).map { Point(x: x, y: $0) } } }
     }
-    var cutHorizontal: Range<Int> {
-        get { return left..<(left  + width)}
-    }
+
+    static let mappingRegex = Regex("^#(\\d+) @ (\\d+),(\\d+): (\\d+)x(\\d+)$")
 
     init?(from claimSlip: String) {
-        let parts = claimSlip.split(separator: " ")
-        guard parts.count == 4, parts[1] == "@" else { return nil }
+        guard let values = Claim.mappingRegex.firstMatch(in: claimSlip)?.captures.compactMap({ $0 }).compactMap(Int.init), values.count == 5 else { return nil }
 
-        let idPart = parts[0]
-        guard idPart.first == "#", let id = Int(idPart[1...]) else { return nil }
-        self.id = id
-
-        let corner = parts[2].components(separatedBy: .init(charactersIn: ",:"))
-        guard corner.count >= 2, let left = Int(corner[0]), let top = Int(corner[1]) else { return nil }
-
-        self.left = left
-        self.top = top
-
-        let dimensions = parts[3].components(separatedBy: "x")
-        guard dimensions.count == 2, let width = Int(dimensions[0]), let height = Int(dimensions[1]) else { return nil }
-
-        self.width = width
-        self.height = height
+        id = values[0]
+        left = values[1]
+        top = values[2]
+        width = values[3]
+        height = values[4]
     }
 }
 
@@ -53,30 +43,15 @@ let input =
     stream.compactMap(Claim.init)
 
 // Part 1
+let cloth = input.lazy.reduce(into: Counter<Point>(), { $0.record(collection: $1.coveredPoints) })
 
-var cloth = [Int: [Int: Set<Int>]]()
+let overlaps = cloth.values.lazy.count(where: { $0 > 1 })
 
-for claim in input {
-    for x in claim.cutHorizontal {
-        for y in claim.cutVertical {
-            cloth[x, default: [:]][y, default: []].insert(claim.id)
-        }
-    }
-}
-
-let overlaps = cloth.values.flatMap({ $0.values }).filter { $0.count > 1}
-
-print("Overlapping squares:", overlaps.count)
+print("Overlapping squares:", overlaps)
 
 // Part 2
-let allIds = Set(input.map { $0.id })
-
-let overlappingClaims = Set(overlaps.flatMap { $0 })
-
-let candidates = allIds.subtracting(overlappingClaims)
-
-if candidates.count == 1, let target = candidates.first {
-    print("Correct claim:", target)
-} else {
-    print("Something's wrong:", candidates)
+guard let target = input.lazy.first(where: { claim in claim.coveredPoints.lazy.allSatisfy({ cloth.occurences(of: $0) == 1 }) }) else {
+    fatalError("There will be one claim that does not have overlaps")
 }
+
+print("Target claim id:", target.id)
