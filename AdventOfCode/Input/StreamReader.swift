@@ -1,6 +1,6 @@
 //
 //  StreamReader.swift
-//  AdventOfCode2018
+//  AdventOfCode
 //
 //  Created by Eric Cormack on 12/1/18.
 //  Copyright © 2018 the Odin Spire. All rights reserved.
@@ -17,7 +17,7 @@ public class StreamReader  {
     public var atEndOfFile: Bool
 
     public init?(path: String, delimiter: String = "\n", encoding: String.Encoding = .utf8,
-          chunkSize: Int = 4096) {
+                 chunkSize: Int = 4096) {
 
         guard let fileHandle = FileHandle(forReadingAtPath: path),
             let delimData = delimiter.data(using: encoding) else {
