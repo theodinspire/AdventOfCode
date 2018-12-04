@@ -11,9 +11,12 @@
 		A067432821B614BC009543B6 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432721B614BC009543B6 /* String+Subscripts.swift */; };
 		A067432A21B614DC009543B6 /* Sequence+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432921B614DC009543B6 /* Sequence+Count.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4265CEFF5EAFAE4553574DA /* Pods_AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
 		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 		A067432721B614BC009543B6 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
 		A067432921B614DC009543B6 /* Sequence+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Count.swift"; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		A08590B421B261B300FAD9EB /* AdventOfCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventOfCode.h; sourceTree = "<group>"; };
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* 2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,12 +32,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4265CEFF5EAFAE4553574DA /* Pods_AdventOfCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38E2A69913E1E1DDCB9E2EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A067432621B614A2009543B6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -49,6 +62,8 @@
 				A08590BC21B261D400FAD9EB /* 2018.playground */,
 				A08590B321B261B300FAD9EB /* AdventOfCode */,
 				A08590B221B261B300FAD9EB /* Products */,
+				FC5921D43C25F885B9D268FE /* Pods */,
+				38E2A69913E1E1DDCB9E2EF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +102,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FC5921D43C25F885B9D268FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */,
+				2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08590B921B261B300FAD9EB /* Build configuration list for PBXNativeTarget "AdventOfCode" */;
 			buildPhases = (
+				BF97F6CEEBADE17670426E3E /* [CP] Check Pods Manifest.lock */,
 				A08590AC21B261B300FAD9EB /* Headers */,
 				A08590AD21B261B300FAD9EB /* Sources */,
 				A08590AE21B261B300FAD9EB /* Frameworks */,
@@ -160,6 +185,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF97F6CEEBADE17670426E3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdventOfCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A08590AD21B261B300FAD9EB /* Sources */ = {
@@ -298,6 +348,7 @@
 		};
 		A08590BA21B261B300FAD9EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -326,6 +377,7 @@
 		};
 		A08590BB21B261B300FAD9EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
