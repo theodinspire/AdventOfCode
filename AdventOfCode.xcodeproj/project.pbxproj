@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
+		A067432821B614BC009543B6 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432721B614BC009543B6 /* String+Subscripts.swift */; };
+		A067432A21B614DC009543B6 /* Sequence+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432921B614DC009543B6 /* Sequence+Count.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0C6E0B621B2644900510DE5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6E0B521B2644900510DE5 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
+		A067432721B614BC009543B6 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
+		A067432921B614DC009543B6 /* Sequence+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Count.swift"; sourceTree = "<group>"; };
 		A08590B121B261B300FAD9EB /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08590B421B261B300FAD9EB /* AdventOfCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventOfCode.h; sourceTree = "<group>"; };
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* 2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		A0C6E0B521B2644900510DE5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A067432621B614A2009543B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A067432721B614BC009543B6 /* String+Subscripts.swift */,
+				A067432921B614DC009543B6 /* Sequence+Count.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A08590A721B261B300FAD9EB = {
 			isa = PBXGroup;
 			children = (
@@ -50,11 +63,11 @@
 		A08590B321B261B300FAD9EB /* AdventOfCode */ = {
 			isa = PBXGroup;
 			children = (
+				A067432621B614A2009543B6 /* Extensions */,
 				A0EDE44921B43CE1005EBB24 /* Models */,
 				A08590BD21B261EE00FAD9EB /* Input */,
 				A08590B421B261B300FAD9EB /* AdventOfCode.h */,
 				A08590B521B261B300FAD9EB /* Info.plist */,
-				A0C6E0B521B2644900510DE5 /* Utilities.swift */,
 			);
 			path = AdventOfCode;
 			sourceTree = "<group>";
@@ -62,6 +75,7 @@
 		A08590BD21B261EE00FAD9EB /* Input */ = {
 			isa = PBXGroup;
 			children = (
+				A067432421B6143C009543B6 /* StreamReader.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -152,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C6E0B621B2644900510DE5 /* Utilities.swift in Sources */,
+				A067432A21B614DC009543B6 /* Sequence+Count.swift in Sources */,
+				A067432821B614BC009543B6 /* String+Subscripts.swift in Sources */,
+				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

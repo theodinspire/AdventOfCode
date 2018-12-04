@@ -1,4 +1,5 @@
 import Foundation
+import AdventOfCode
 
 guard let filepath = Bundle.main.url(forResource: "01", withExtension: "txt"),
     let input = StreamReader(url: filepath) else { abort() }
