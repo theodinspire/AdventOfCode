@@ -29,11 +29,7 @@ let sample = """
 [1518-11-05 00:55] wakes up
 """.components(separatedBy: .newlines)
 
-let calendar: Calendar = {
-    var calendar = Calendar(identifier: .gregorian)
-    calendar.timeZone = TimeZone(abbreviation: "UTC") ?? calendar.timeZone
-    return calendar
-}()
+let calendar = Calendar.current
 
 struct ShiftLog {
     enum Action {

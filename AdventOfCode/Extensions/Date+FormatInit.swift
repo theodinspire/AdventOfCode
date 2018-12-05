@@ -12,7 +12,6 @@ public extension DateFormatter {
     public convenience init(from format: String) {
         self.init()
 
-        self.timeZone = TimeZone(abbreviation: "UTC")
         self.dateFormat = format
     }
 }
