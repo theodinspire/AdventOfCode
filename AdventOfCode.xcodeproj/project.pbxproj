@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01BB06921B96E0E002FF11D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01BB06821B96E0E002FF11D /* Queue.swift */; };
 		A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
+		A01BB06821B96E0E002FF11D /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Compacted.swift"; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A05F6A7D21B61905006C85A2 /* Point.swift */,
+				A01BB06821B96E0E002FF11D /* Queue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				A0BE59AE21B67F89002D3301 /* Date+FormatInit.swift in Sources */,
 				A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */,
 				A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */,
+				A01BB06921B96E0E002FF11D /* Queue.swift in Sources */,
 				A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */,
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
