@@ -75,18 +75,17 @@ let timeValues = order.reduce(into: [String : Int]()) { dictionary, key in
 var timeSpent = 0
 var currentSteps = [String : Int](minimumCapacity: totalElves)
 
-//for _ in 1...6 {
-repeat {
+for _ in 1...1 {
+//repeat {
     stepping: for step in remainingSteps.subtracting(dependencies.keys).sorted(by: <).makeIterator() {
         guard currentSteps.count < totalElves else { break stepping }
         currentSteps[step] = timeValues[step] ?? 0
         let _ = remainingSteps.remove(step)
     }
 
-//    var iterator = remainingSteps.subtracting(dependencies.keys).sorted(by: <).makeIterator()
+    var iterator = remainingSteps.subtracting(dependencies.keys).sorted(by: <).makeIterator()
 //    while currentSteps.count < totalElves, let step = iterator.next() {
-//        currentSteps[step] = timeValues[step] ?? 0
-//        let _ = remainingSteps.remove(step)
+//        print(step)
 //    }
 
     guard let (next, time) = currentSteps.min(by: { $0.value < $1.value }) else { break }
@@ -101,7 +100,7 @@ repeat {
     for (key, value) in currentSteps { currentSteps[key] = value - time }
 
     timeSpent += time
-//}
-} while !currentSteps.isEmpty || !remainingSteps.isEmpty
+}
+//} while !currentSteps.isEmpty || !remainingSteps.isEmpty
 
 print("Time spent:", timeSpent)
