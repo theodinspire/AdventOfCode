@@ -9,7 +9,6 @@
 import Foundation
 
 public extension Int {
-    ///
     public func modulo(_ divisor: Int) -> Int {
         let remainder = self % divisor
 
