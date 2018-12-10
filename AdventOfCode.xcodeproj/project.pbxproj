@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193F9262026EF1745713CEE6 /* Pods_AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6B8E647965F61A7B3E169B /* Pods_AdventOfCode.framework */; };
+		8CEDAB127FB6A66CB96F2670 /* Pods_AdventOfCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B05FE33D21509C795F9923 /* Pods_AdventOfCodeTests.framework */; };
+		A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F593521BD696700B1801E /* Int+Modulo.swift */; };
+		A00F594021BD8DF600B1801E /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08590B121B261B300FAD9EB /* AdventOfCode.framework */; };
+		A00F594821BD8E3000B1801E /* Int+ModuloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F594721BD8E3000B1801E /* Int+ModuloTests.swift */; };
 		A01BB06921B96E0E002FF11D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01BB06821B96E0E002FF11D /* Queue.swift */; };
+		A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880221BDF87B00477EE4 /* Int+Bits.swift */; };
+		A028880621BDF8CE00477EE4 /* Int+BitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */; };
 		A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
@@ -16,13 +23,31 @@
 		A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */; };
 		A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */; };
 		A0BE59AE21B67F89002D3301 /* Date+FormatInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */; };
-		C4265CEFF5EAFAE4553574DA /* Pods_AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A00F594121BD8DF600B1801E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08590A821B261B300FAD9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08590B021B261B300FAD9EB;
+			remoteInfo = AdventOfCode;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
+		110735A8B3FCE38ED36B8231 /* Pods-AdventOfCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCodeTests/Pods-AdventOfCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29008441BA9438965EF00D05 /* Pods-AdventOfCodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCodeTests/Pods-AdventOfCodeTests.release.xcconfig"; sourceTree = "<group>"; };
+		45B05FE33D21509C795F9923 /* Pods_AdventOfCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF12F73C976711220EEB034 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
+		9B6B8E647965F61A7B3E169B /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00F593521BD696700B1801E /* Int+Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Modulo.swift"; sourceTree = "<group>"; };
+		A00F593B21BD8DF600B1801E /* AdventOfCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00F593F21BD8DF600B1801E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00F594721BD8E3000B1801E /* Int+ModuloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ModuloTests.swift"; sourceTree = "<group>"; };
 		A01BB06821B96E0E002FF11D /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		A028880221BDF87B00477EE4 /* Int+Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Bits.swift"; sourceTree = "<group>"; };
+		A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+BitsTests.swift"; sourceTree = "<group>"; };
 		A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Compacted.swift"; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
@@ -34,27 +59,83 @@
 		A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Count.swift"; sourceTree = "<group>"; };
 		A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
 		A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormatInit.swift"; sourceTree = "<group>"; };
-		C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.debug.xcconfig"; sourceTree = "<group>"; };
+		C2BA665F0CC7033E21DE48C7 /* Pods-AdventOfCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A00F593821BD8DF600B1801E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00F594021BD8DF600B1801E /* AdventOfCode.framework in Frameworks */,
+				8CEDAB127FB6A66CB96F2670 /* Pods_AdventOfCodeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08590AE21B261B300FAD9EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4265CEFF5EAFAE4553574DA /* Pods_AdventOfCode.framework in Frameworks */,
+				193F9262026EF1745713CEE6 /* Pods_AdventOfCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38E2A69913E1E1DDCB9E2EF9 /* Frameworks */ = {
+		90786B304238F072FEB5E453 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				127EB1BDC4F0D5CAB7FFB1A2 /* Pods_AdventOfCode.framework */,
+				C2BA665F0CC7033E21DE48C7 /* Pods-AdventOfCode.debug.xcconfig */,
+				6FF12F73C976711220EEB034 /* Pods-AdventOfCode.release.xcconfig */,
+				110735A8B3FCE38ED36B8231 /* Pods-AdventOfCodeTests.debug.xcconfig */,
+				29008441BA9438965EF00D05 /* Pods-AdventOfCodeTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A00F593C21BD8DF600B1801E /* AdventOfCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00F594621BD8E0300B1801E /* Extensions */,
+				A00F593F21BD8DF600B1801E /* Info.plist */,
+			);
+			path = AdventOfCodeTests;
+			sourceTree = "<group>";
+		};
+		A00F594621BD8E0300B1801E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A028880421BDF8B400477EE4 /* Int */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A028880021BDF84700477EE4 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				A00F593521BD696700B1801E /* Int+Modulo.swift */,
+				A028880221BDF87B00477EE4 /* Int+Bits.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		A028880121BDF85100477EE4 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */,
+				A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		A028880421BDF8B400477EE4 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				A00F594721BD8E3000B1801E /* Int+ModuloTests.swift */,
+				A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */,
+			);
+			path = Int;
 			sourceTree = "<group>";
 		};
 		A08590A721B261B300FAD9EB = {
@@ -62,9 +143,10 @@
 			children = (
 				A08590BC21B261D400FAD9EB /* 2018.playground */,
 				A08590B321B261B300FAD9EB /* AdventOfCode */,
+				A00F593C21BD8DF600B1801E /* AdventOfCodeTests */,
 				A08590B221B261B300FAD9EB /* Products */,
-				FC5921D43C25F885B9D268FE /* Pods */,
-				38E2A69913E1E1DDCB9E2EF9 /* Frameworks */,
+				90786B304238F072FEB5E453 /* Pods */,
+				FF626439064032DE6DE61C71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				A08590B121B261B300FAD9EB /* AdventOfCode.framework */,
+				A00F593B21BD8DF600B1801E /* AdventOfCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,11 +182,11 @@
 		A0B3AB7C21B62ED800C06553 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A028880121BDF85100477EE4 /* Collection */,
+				A028880021BDF84700477EE4 /* Int */,
 				A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */,
 				A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */,
-				A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */,
 				A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */,
-				A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -117,13 +200,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FC5921D43C25F885B9D268FE /* Pods */ = {
+		FF626439064032DE6DE61C71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */,
-				2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */,
+				9B6B8E647965F61A7B3E169B /* Pods_AdventOfCode.framework */,
+				45B05FE33D21509C795F9923 /* Pods_AdventOfCodeTests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,11 +223,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A00F593A21BD8DF600B1801E /* AdventOfCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00F594321BD8DF600B1801E /* Build configuration list for PBXNativeTarget "AdventOfCodeTests" */;
+			buildPhases = (
+				6C481B51699FB1B2DA5954B0 /* [CP] Check Pods Manifest.lock */,
+				A00F593721BD8DF600B1801E /* Sources */,
+				A00F593821BD8DF600B1801E /* Frameworks */,
+				A00F593921BD8DF600B1801E /* Resources */,
+				EC64425E7326B577FDC4011D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00F594221BD8DF600B1801E /* PBXTargetDependency */,
+			);
+			name = AdventOfCodeTests;
+			productName = AdventOfCodeTests;
+			productReference = A00F593B21BD8DF600B1801E /* AdventOfCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A08590B021B261B300FAD9EB /* AdventOfCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08590B921B261B300FAD9EB /* Build configuration list for PBXNativeTarget "AdventOfCode" */;
 			buildPhases = (
-				BF97F6CEEBADE17670426E3E /* [CP] Check Pods Manifest.lock */,
+				9A5E265CE25AA36E7F7E7EC9 /* [CP] Check Pods Manifest.lock */,
 				A08590AC21B261B300FAD9EB /* Headers */,
 				A08590AD21B261B300FAD9EB /* Sources */,
 				A08590AE21B261B300FAD9EB /* Frameworks */,
@@ -165,9 +268,13 @@
 		A08590A821B261B300FAD9EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "the Odin Spire";
 				TargetAttributes = {
+					A00F593A21BD8DF600B1801E = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					A08590B021B261B300FAD9EB = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -187,11 +294,19 @@
 			projectRoot = "";
 			targets = (
 				A08590B021B261B300FAD9EB /* AdventOfCode */,
+				A00F593A21BD8DF600B1801E /* AdventOfCodeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A00F593921BD8DF600B1801E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08590AF21B261B300FAD9EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,7 +317,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BF97F6CEEBADE17670426E3E /* [CP] Check Pods Manifest.lock */ = {
+		6C481B51699FB1B2DA5954B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdventOfCodeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A5E265CE25AA36E7F7E7EC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,9 +361,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EC64425E7326B577FDC4011D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AdventOfCodeTests/Pods-AdventOfCodeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/STRegex/Regex.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Regex.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export EXPANDED_CODE_SIGN_IDENTITY=-\nexport EXPANDED_CODE_SIGN_IDENTITY_NAME=-\n\n\"${SRCROOT}/Pods/Target Support Files/Pods-AdventOfCodeTests/Pods-AdventOfCodeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A00F593721BD8DF600B1801E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00F594821BD8E3000B1801E /* Int+ModuloTests.swift in Sources */,
+				A028880621BDF8CE00477EE4 /* Int+BitsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A08590AD21B261B300FAD9EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,14 +405,62 @@
 				A01BB06921B96E0E002FF11D /* Queue.swift in Sources */,
 				A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */,
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
+				A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
+				A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A00F594221BD8DF600B1801E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08590B021B261B300FAD9EB /* AdventOfCode */;
+			targetProxy = A00F594121BD8DF600B1801E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A00F594421BD8DF600B1801E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110735A8B3FCE38ED36B8231 /* Pods-AdventOfCodeTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MP2C6DY4C6;
+				INFOPLIST_FILE = AdventOfCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theodinspire.AdventOfCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		A00F594521BD8DF600B1801E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29008441BA9438965EF00D05 /* Pods-AdventOfCodeTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MP2C6DY4C6;
+				INFOPLIST_FILE = AdventOfCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theodinspire.AdventOfCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		A08590B721B261B300FAD9EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,7 +584,7 @@
 		};
 		A08590BA21B261B300FAD9EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6ADA9EE22E1D2F55B148C93 /* Pods-AdventOfCode.debug.xcconfig */;
+			baseConfigurationReference = C2BA665F0CC7033E21DE48C7 /* Pods-AdventOfCode.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -397,7 +613,7 @@
 		};
 		A08590BB21B261B300FAD9EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C5AA0FDEC139259D60EE860 /* Pods-AdventOfCode.release.xcconfig */;
+			baseConfigurationReference = 6FF12F73C976711220EEB034 /* Pods-AdventOfCode.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -426,6 +642,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A00F594321BD8DF600B1801E /* Build configuration list for PBXNativeTarget "AdventOfCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00F594421BD8DF600B1801E /* Debug */,
+				A00F594521BD8DF600B1801E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A08590AB21B261B300FAD9EB /* Build configuration list for PBXProject "AdventOfCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
