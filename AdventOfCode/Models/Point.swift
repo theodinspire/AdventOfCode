@@ -42,6 +42,14 @@ public struct Point {
     public func manhattanDistance(from that: Point) -> Int {
         return abs(self.x - that.x) + abs(self.y - that.y)
     }
+
+    public static func +(this: Point, that: Point) -> Point {
+        return Point(x: this.x + that.x, y: this.y + that.y)
+    }
+
+    public static func *(scalar: Int, point: Point) -> Point {
+        return Point(x: scalar * point.x, y: scalar * point.y)
+    }
 }
 
 extension Point: Hashable {
