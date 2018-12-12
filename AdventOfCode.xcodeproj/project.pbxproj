@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		193F9262026EF1745713CEE6 /* Pods_AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6B8E647965F61A7B3E169B /* Pods_AdventOfCode.framework */; };
 		8CEDAB127FB6A66CB96F2670 /* Pods_AdventOfCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B05FE33D21509C795F9923 /* Pods_AdventOfCodeTests.framework */; };
+		A006F6C021C15E2C00B4F703 /* Dictionary+RangeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006F6BF21C15E2C00B4F703 /* Dictionary+RangeIndex.swift */; };
 		A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F593521BD696700B1801E /* Int+Modulo.swift */; };
 		A00F594021BD8DF600B1801E /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08590B121B261B300FAD9EB /* AdventOfCode.framework */; };
 		A00F594821BD8E3000B1801E /* Int+ModuloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F594721BD8E3000B1801E /* Int+ModuloTests.swift */; };
@@ -41,6 +42,7 @@
 		45B05FE33D21509C795F9923 /* Pods_AdventOfCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF12F73C976711220EEB034 /* Pods-AdventOfCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventOfCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventOfCode/Pods-AdventOfCode.release.xcconfig"; sourceTree = "<group>"; };
 		9B6B8E647965F61A7B3E169B /* Pods_AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A006F6BF21C15E2C00B4F703 /* Dictionary+RangeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+RangeIndex.swift"; sourceTree = "<group>"; };
 		A00F593521BD696700B1801E /* Int+Modulo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Modulo.swift"; sourceTree = "<group>"; };
 		A00F593B21BD8DF600B1801E /* AdventOfCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00F593F21BD8DF600B1801E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,15 @@
 				29008441BA9438965EF00D05 /* Pods-AdventOfCodeTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A006F6BE21C15E0C00B4F703 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */,
+				A006F6BF21C15E2C00B4F703 /* Dictionary+RangeIndex.swift */,
+			);
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
 		A00F593C21BD8DF600B1801E /* AdventOfCodeTests */ = {
@@ -182,10 +193,10 @@
 		A0B3AB7C21B62ED800C06553 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A006F6BE21C15E0C00B4F703 /* Dictionary */,
 				A028880121BDF85100477EE4 /* Collection */,
 				A028880021BDF84700477EE4 /* Int */,
 				A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */,
-				A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */,
 				A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */,
 			);
 			path = Extensions;
@@ -407,6 +418,7 @@
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
 				A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
+				A006F6C021C15E2C00B4F703 /* Dictionary+RangeIndex.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
 				A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */,
 			);
