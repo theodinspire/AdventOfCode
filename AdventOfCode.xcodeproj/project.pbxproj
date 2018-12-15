@@ -17,6 +17,7 @@
 		A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880221BDF87B00477EE4 /* Int+Bits.swift */; };
 		A028880621BDF8CE00477EE4 /* Int+BitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */; };
 		A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */; };
+		A0554CC121C2F927006E2726 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0554CC021C2F927006E2726 /* Heading.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +52,7 @@
 		A028880221BDF87B00477EE4 /* Int+Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Bits.swift"; sourceTree = "<group>"; };
 		A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+BitsTests.swift"; sourceTree = "<group>"; };
 		A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Compacted.swift"; sourceTree = "<group>"; };
+		A0554CC021C2F927006E2726 /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		A067432421B6143C009543B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 		A08590B121B261B300FAD9EB /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 			children = (
 				A05F6A7D21B61905006C85A2 /* Point.swift */,
 				A01BB06821B96E0E002FF11D /* Queue.swift */,
+				A0554CC021C2F927006E2726 /* Heading.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				A006F6C021C15E2C00B4F703 /* Dictionary+RangeIndex.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
 				A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */,
+				A0554CC121C2F927006E2726 /* Heading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

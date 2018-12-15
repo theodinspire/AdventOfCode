@@ -21,6 +21,11 @@ public struct Point {
         ]
     }
 
+    public var north: Point { return Point(x: x, y: y - 1) }
+    public var east: Point { return Point(x: x + 1, y: y) }
+    public var south: Point { return Point(x: x, y: y + 1) }
+    public var west: Point { return Point(x: x - 1, y: y) }
+
     public init(x: Int, y: Int) {
         self.x = x
         self.y = y
