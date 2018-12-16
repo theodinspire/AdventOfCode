@@ -13,12 +13,7 @@ public struct Point {
     public let y: Int
 
     public var manhattanNeighbors: [Point] {
-        return [
-            Point(x: x, y: y - 1),
-            Point(x: x - 1, y: y),
-            Point(x: x + 1, y: y),
-            Point(x: x, y: y + 1)
-        ]
+        return [north, west, east, south]
     }
 
     public var north: Point { return Point(x: x, y: y - 1) }
@@ -63,6 +58,13 @@ extension Point: Hashable {
     }
 
     public var hashValue: Int {
-        return x << 16 + y
+        return y << 16 + x
+    }
+}
+
+extension Point: Comparable {
+    public static func <(this: Point, that: Point) -> Bool {
+        if this.y < that.y { return true }
+        return this.y == that.y && this.x < that.x
     }
 }

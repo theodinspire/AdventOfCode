@@ -26,6 +26,10 @@ public struct Queue<Element> {
 
     public init() { }
 
+    public init(startingWith item: Element) {
+        enqueue(item)
+    }
+
     public init<Source>(from items: Source) where Source: Collection, Element == Source.Element {
         for item in items {
             enqueue(item)
