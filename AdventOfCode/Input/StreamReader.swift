@@ -11,10 +11,12 @@ import Foundation
 public class StreamReader  {
     public let encoding: String.Encoding
     public let chunkSize: Int
-    public var fileHandle: FileHandle!
+    private(set) public var fileHandle: FileHandle!
     public let delimData: Data
-    public var buffer: Data
-    public var atEndOfFile: Bool
+    private(set) public var buffer: Data
+    private(set) public var atEndOfFile: Bool
+
+    public var hasNext: Bool { return !atEndOfFile }
 
     public init?(path: String, delimiter: String = "\n", encoding: String.Encoding = .utf8,
                  chunkSize: Int = 4096) {
