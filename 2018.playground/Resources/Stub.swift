@@ -6,4 +6,4 @@ guard let filepath = Bundle.main.url(forResource: "Stub", withExtension: "txt"),
 
 let sample = """
 
-""".components(separatedBy: .newlines
+""".components(separatedBy: .newlines)

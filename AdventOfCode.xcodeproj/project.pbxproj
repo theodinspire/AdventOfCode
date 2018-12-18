@@ -21,6 +21,7 @@
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09A588D21C89A7A00687A78 /* Dictionary+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A588C21C89A7A00687A78 /* Dictionary+Point.swift */; };
 		A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */; };
 		A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */; };
 		A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */; };
@@ -59,6 +60,7 @@
 		A08590B421B261B300FAD9EB /* AdventOfCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventOfCode.h; sourceTree = "<group>"; };
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* 2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A09A588C21C89A7A00687A78 /* Dictionary+Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Point.swift"; sourceTree = "<group>"; };
 		A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Counter.swift"; sourceTree = "<group>"; };
 		A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Count.swift"; sourceTree = "<group>"; };
 		A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */,
 				A006F6BF21C15E2C00B4F703 /* Dictionary+RangeIndex.swift */,
+				A09A588C21C89A7A00687A78 /* Dictionary+Point.swift */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				A01BB06921B96E0E002FF11D /* Queue.swift in Sources */,
 				A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */,
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
+				A09A588D21C89A7A00687A78 /* Dictionary+Point.swift in Sources */,
 				A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
 				A006F6C021C15E2C00B4F703 /* Dictionary+RangeIndex.swift in Sources */,
