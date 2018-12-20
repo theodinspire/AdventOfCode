@@ -27,3 +27,15 @@ public extension Dictionary where Key == Point {
         }
     }
 }
+
+public extension Dictionary where Key == Point, Value: RawRepresentable, Value.RawValue == Character {
+    public func generateMap(defaultingTo null: Value) -> String {
+        let (xMax, yMax) = self.keys.reduce((x: Int.min, y: Int.min)) {
+                (Swift.max($0.x, $1.y), Swift.max($0.y, $1.y))
+        }
+
+        return (0...yMax).map { y in
+            String((0...xMax).map { x in self[x, y, default: null].rawValue })
+            }.joined(separator: "\n")
+    }
+}

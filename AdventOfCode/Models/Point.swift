@@ -16,6 +16,14 @@ public struct Point {
         return [north, west, east, south]
     }
 
+    public var adjacentPoints: [Point] {
+        return
+            [Point(x: x - 1, y: y - 1), north,
+            Point(x: x + 1, y: y - 1), west,
+            east, Point(x: x - 1, y: y + 1),
+            south, Point(x: x + 1, y: y + 1)]
+    }
+
     public var north: Point { return Point(x: x, y: y - 1) }
     public var east: Point { return Point(x: x + 1, y: y) }
     public var south: Point { return Point(x: x, y: y + 1) }
