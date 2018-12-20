@@ -18,11 +18,16 @@ y=13, x=498..504
 """.components(separatedBy: .newlines)
 
 let input =
-    sample
-//    stream
-        .compactMap(parse).flatMap({ $0 })
+//    sample
+    stream
 
-let spring = Point(x: 500, y: 0)
-var map = input.reduce(into: [spring : Fill.Spring]) { $0[$1] = .Clay }
+let groundWater = Hydrology(springingFrom: Point(x: 500, y: 0), from: input)
 
-print(generateChart(from: map))
+//print(groundWater.generateChart(), "\n")
+
+groundWater.flow()
+
+//print(groundWater.generateChart(), "\n")
+print("Watered squares:", groundWater.saturatedCount)
+
+print("Standing water:", groundWater.map.count(where: { $0.value == .StandingWater }) )
