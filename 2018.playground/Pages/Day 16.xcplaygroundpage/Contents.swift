@@ -29,39 +29,7 @@ func parseInstructionSet(from line: String) -> [Int]? {
     return captures
 }
 
-enum Instruction: String {
-    // Addition
-    case addr
-    case addi
-
-    // Multiplication
-    case mulr
-    case muli
-
-    // Bitwise AND
-    case banr
-    case bani
-
-    // Bitwise OR
-    case borr
-    case bori
-
-    // Assignment
-    case setr
-    case seti
-
-    // Greater Than
-    case gtir
-    case gtri
-    case gtrr
-
-    // Equality
-    case eqir
-    case eqri
-    case eqrr
-}
-
-func perform(operation: Instruction, with inputs: [Int], on register: [Int]) -> [Int] {
+func perform(operation: Instruction.Code, with inputs: [Int], on register: [Int]) -> [Int] {
     guard inputs.count == 3, register.count == 4
         else { return Array(repeating: 0, count: 4) }
 
@@ -121,10 +89,10 @@ func perform(operation: Instruction, with inputs: [Int], on register: [Int]) -> 
     return output
 }
 
-let allInstructions = Set([Instruction.addr, .addi, .mulr, .muli,
-                                      .banr, .bani, .borr, .bori,
-                                      .setr, .seti, .gtir, .gtri,
-                                      .gtrr, .eqir, .eqri, .eqrr])
+let allInstructions = Set([Instruction.Code.addr, .addi, .mulr, .muli,
+                                          .banr, .bani, .borr, .bori,
+                                          .setr, .seti, .gtir, .gtri,
+                                          .gtrr, .eqir, .eqri, .eqrr])
 
 //guard let before = parseRegister(from: sample[0]),
 //    let instructionSet = parseInstructionSet(from: sample[1]),
@@ -158,7 +126,7 @@ while stream.hasNext {
 let instructionRange = 0..<16
 
 var candidates = instructionRange
-    .reduce(into: [Int: Set<Instruction>]()) { $0[$1] = allInstructions }
+    .reduce(into: [Int: Set<Instruction.Code>]()) { $0[$1] = allInstructions }
 
 for observation in observed {
     let possibleInstructions = allInstructions.filter { instruction -> Bool in
