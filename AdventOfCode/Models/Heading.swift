@@ -8,11 +8,11 @@
 
 import Foundation
 
-public enum Heading {
-    case North
-    case East
-    case South
-    case West
+public enum Heading: Character {
+    case North = "N"
+    case East = "E"
+    case South = "S"
+    case West = "W"
 
     public var left: Heading {
         switch self {
@@ -42,4 +42,6 @@ public enum Heading {
         case .West: return .East
         }
     }
+
+    public var opposite: Heading { return behind }
 }

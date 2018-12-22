@@ -51,8 +51,21 @@ public struct Point {
         return abs(self.x - that.x) + abs(self.y - that.y)
     }
 
+    public func neighbor(toThe heading: Heading) -> Point {
+        switch heading {
+        case .North: return north
+        case .East: return east
+        case .South: return south
+        case .West: return west
+        }
+    }
+
     public static func +(this: Point, that: Point) -> Point {
         return Point(x: this.x + that.x, y: this.y + that.y)
+    }
+
+    public static func +(this: Point, that: (x: Int, y: Int)) -> Point {
+        return this + Point(x: that.x, y: that.y)
     }
 
     public static func *(scalar: Int, point: Point) -> Point {
@@ -74,5 +87,11 @@ extension Point: Comparable {
     public static func <(this: Point, that: Point) -> Bool {
         if this.y < that.y { return true }
         return this.y == that.y && this.x < that.x
+    }
+}
+
+extension Point: CustomStringConvertible {
+    public var description: String {
+        return "(\(x), \(y))"
     }
 }
