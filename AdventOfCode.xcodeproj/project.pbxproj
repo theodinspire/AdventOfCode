@@ -17,6 +17,7 @@
 		A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880221BDF87B00477EE4 /* Int+Bits.swift */; };
 		A028880621BDF8CE00477EE4 /* Int+BitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */; };
 		A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */; };
+		A03F130221CE6E3500C596D2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130121CE6E3500C596D2 /* Register.swift */; };
 		A050F55F21CE68E500CEF605 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050F55E21CE68E500CEF605 /* Instruction.swift */; };
 		A0554CC121C2F927006E2726 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0554CC021C2F927006E2726 /* Heading.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
@@ -54,6 +55,7 @@
 		A028880221BDF87B00477EE4 /* Int+Bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Bits.swift"; sourceTree = "<group>"; };
 		A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+BitsTests.swift"; sourceTree = "<group>"; };
 		A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Compacted.swift"; sourceTree = "<group>"; };
+		A03F130121CE6E3500C596D2 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		A050F55E21CE68E500CEF605 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 		A0554CC021C2F927006E2726 /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -159,6 +161,8 @@
 		A03F130021CE6DEE00C596D2 /* TimeDevice */ = {
 			isa = PBXGroup;
 			children = (
+				A050F55E21CE68E500CEF605 /* Instruction.swift */,
+				A03F130121CE6E3500C596D2 /* Register.swift */,
 			);
 			path = TimeDevice;
 			sourceTree = "<group>";
@@ -223,7 +227,6 @@
 				A05F6A7D21B61905006C85A2 /* Point.swift */,
 				A01BB06821B96E0E002FF11D /* Queue.swift */,
 				A0554CC021C2F927006E2726 /* Heading.swift */,
-				A050F55E21CE68E500CEF605 /* Instruction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				A09A588D21C89A7A00687A78 /* Dictionary+Point.swift in Sources */,
 				A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
+				A03F130221CE6E3500C596D2 /* Register.swift in Sources */,
 				A006F6C021C15E2C00B4F703 /* Dictionary+RangeIndex.swift in Sources */,
 				A050F55F21CE68E500CEF605 /* Instruction.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
