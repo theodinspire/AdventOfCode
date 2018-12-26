@@ -12,8 +12,8 @@ target: 10,10
 """.components(separatedBy: .newlines)
 
 let input =
-    sample
-//    Array(stream)
+//    sample
+    Array(stream)
 
 let depthRegex = Regex("depth: (\\d+)")
 let targetRegex = Regex("target: (\\d+,\\d+)")
@@ -30,3 +30,4 @@ print("Risk level:",
       (Point.origin...target).map { cave.terrain(at: $0).rawValue }.reduce(0, +))
 
 // Part 2
+print("Elapsed time:", cave.rescueTime(to: target))

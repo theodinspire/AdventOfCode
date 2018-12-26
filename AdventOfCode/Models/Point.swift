@@ -16,6 +16,8 @@ public struct Point {
         return [north, west, east, south]
     }
 
+    public var manhattanMagnitude: Int { return abs(x + y) }
+
     public var adjacentPoints: [Point] {
         return
             [Point(x: x - 1, y: y - 1), north,
@@ -62,6 +64,7 @@ public struct Point {
         }
     }
 
+    // Addition
     public static func +(this: Point, that: Point) -> Point {
         return Point(x: this.x + that.x, y: this.y + that.y)
     }
@@ -70,10 +73,29 @@ public struct Point {
         return this + Point(x: that.x, y: that.y)
     }
 
+    public static func +(this: (x: Int, y: Int), that: Point) -> Point {
+        return that + this
+    }
+
+    // Subtraction
+    public static func -(this: Point, that: Point) -> Point {
+        return Point(x: this.x - that.x, y: this.y - that.y)
+    }
+
+    public static func -(this: Point, that: (x: Int, y: Int)) -> Point {
+        return this - Point(x: that.x, y: that.y)
+    }
+
+    public static func -(this: (x: Int, y: Int), that: Point) -> Point {
+        return that - this
+    }
+
+    // Scalar multiplication
     public static func *(scalar: Int, point: Point) -> Point {
         return Point(x: scalar * point.x, y: scalar * point.y)
     }
 
+    // Range
     public static func ...(this: Point, that: Point) -> [Point] {
         guard this <= that else { return [] }
 
