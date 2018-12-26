@@ -24,6 +24,8 @@ public struct Point {
             south, Point(x: x + 1, y: y + 1)]
     }
 
+    public static let origin = Point(x: 0, y: 0)
+
     public var north: Point { return Point(x: x, y: y - 1) }
     public var east: Point { return Point(x: x + 1, y: y) }
     public var south: Point { return Point(x: x, y: y + 1) }
@@ -71,6 +73,13 @@ public struct Point {
     public static func *(scalar: Int, point: Point) -> Point {
         return Point(x: scalar * point.x, y: scalar * point.y)
     }
+
+    public static func ...(this: Point, that: Point) -> [Point] {
+        guard this <= that else { return [] }
+
+        return
+            (this.y...that.y).flatMap { y in (this.x...that.x).map { x in Point(x: x, y: y) } }
+    }
 }
 
 extension Point: Hashable {
@@ -88,6 +97,38 @@ extension Point: Comparable {
         if this.y < that.y { return true }
         return this.y == that.y && this.x < that.x
     }
+
+    public static func ==(this: Point, that: (x: Int, y: Int)) -> Bool {
+        return this.x == that.x && this.y == that.y
+    }
+
+    public static func !=(this: Point, that: (x: Int, y: Int)) -> Bool {
+        return !(this == that)
+    }
+
+    public static func ==(this: (x: Int, y: Int), that: Point) -> Bool {
+        return that == this
+    }
+
+    public static func !=(this: (x: Int, y: Int), that: Point) -> Bool {
+        return !(that == this)
+    }
+
+    public static func ~=(pattern: (x: Int, y: Int), value: Point) -> Bool {
+        return pattern == value
+    }
+
+    public static func ~=(pattern: Point, value: (x: Int, y: Int)) -> Bool {
+        return value == pattern
+    }
+
+    public func unapply() -> (x: Int, y: Int) {
+        return (self.x, self.y)
+    }
+}
+
+public func ~=(this: (x: Int, y: Int), that: (x: Int, y: Int)) -> Bool {
+    return this.x == that.x && this.y == that.y
 }
 
 extension Point: CustomStringConvertible {

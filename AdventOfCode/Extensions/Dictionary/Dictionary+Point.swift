@@ -26,6 +26,13 @@ public extension Dictionary where Key == Point {
             self[Point(x: x, y: y)] = newValue
         }
     }
+
+    public subscript<ARange, AnotherRange>(_ xes: ARange, _ wyes: AnotherRange) -> [Value] where ARange: Collection, ARange: RangeExpression, ARange.Element == Int, AnotherRange: Collection, AnotherRange: RangeExpression, AnotherRange.Element == Int {
+        get {
+            return xes.flatMap { x in wyes.map({ y in Point(x: x, y: y) }) }
+                .compactMap { self[$0] }
+        }
+    }
 }
 
 public extension Dictionary where Key == Point, Value: RawRepresentable, Value.RawValue == Character {

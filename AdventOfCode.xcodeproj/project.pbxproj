@@ -18,6 +18,9 @@
 		A028880621BDF8CE00477EE4 /* Int+BitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */; };
 		A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */; };
 		A03F130221CE6E3500C596D2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130121CE6E3500C596D2 /* Register.swift */; };
+		A03F130421D25D3100C596D2 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130321D25D3100C596D2 /* Heap.swift */; };
+		A03F130621D296D500C596D2 /* Set+DoesNotContain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130521D296D500C596D2 /* Set+DoesNotContain.swift */; };
+		A03F130821D2973E00C596D2 /* Set+DoesNotContainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130721D2973E00C596D2 /* Set+DoesNotContainTests.swift */; };
 		A050F55F21CE68E500CEF605 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050F55E21CE68E500CEF605 /* Instruction.swift */; };
 		A0554CC121C2F927006E2726 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0554CC021C2F927006E2726 /* Heading.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
@@ -56,6 +59,9 @@
 		A028880521BDF8CE00477EE4 /* Int+BitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+BitsTests.swift"; sourceTree = "<group>"; };
 		A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Compacted.swift"; sourceTree = "<group>"; };
 		A03F130121CE6E3500C596D2 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		A03F130321D25D3100C596D2 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		A03F130521D296D500C596D2 /* Set+DoesNotContain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+DoesNotContain.swift"; sourceTree = "<group>"; };
+		A03F130721D2973E00C596D2 /* Set+DoesNotContainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+DoesNotContainTests.swift"; sourceTree = "<group>"; };
 		A050F55E21CE68E500CEF605 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 		A0554CC021C2F927006E2726 /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A028880421BDF8B400477EE4 /* Int */,
+				A03F130721D2973E00C596D2 /* Set+DoesNotContainTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 				A028880021BDF84700477EE4 /* Int */,
 				A0BE59AD21B67F89002D3301 /* Date+FormatInit.swift */,
 				A0B3AB8121B62F5B00C06553 /* String+Subscripts.swift */,
+				A03F130521D296D500C596D2 /* Set+DoesNotContain.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 				A05F6A7D21B61905006C85A2 /* Point.swift */,
 				A01BB06821B96E0E002FF11D /* Queue.swift */,
 				A0554CC021C2F927006E2726 /* Heading.swift */,
+				A03F130321D25D3100C596D2 /* Heap.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03F130821D2973E00C596D2 /* Set+DoesNotContainTests.swift in Sources */,
 				A00F594821BD8E3000B1801E /* Int+ModuloTests.swift in Sources */,
 				A028880621BDF8CE00477EE4 /* Int+BitsTests.swift in Sources */,
 			);
@@ -433,6 +443,7 @@
 				A0BE59AE21B67F89002D3301 /* Date+FormatInit.swift in Sources */,
 				A02D483521B6C5EF006D5BC9 /* Collection+Compacted.swift in Sources */,
 				A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */,
+				A03F130421D25D3100C596D2 /* Heap.swift in Sources */,
 				A01BB06921B96E0E002FF11D /* Queue.swift in Sources */,
 				A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */,
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
@@ -444,6 +455,7 @@
 				A050F55F21CE68E500CEF605 /* Instruction.swift in Sources */,
 				A067432521B6143C009543B6 /* StreamReader.swift in Sources */,
 				A028880321BDF87B00477EE4 /* Int+Bits.swift in Sources */,
+				A03F130621D296D500C596D2 /* Set+DoesNotContain.swift in Sources */,
 				A0554CC121C2F927006E2726 /* Heading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
