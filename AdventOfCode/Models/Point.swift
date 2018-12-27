@@ -16,7 +16,7 @@ public struct Point {
         return [north, west, east, south]
     }
 
-    public var manhattanMagnitude: Int { return abs(x + y) }
+    public var manhattanMagnitude: Int { return abs(x) + abs(y) }
 
     public var adjacentPoints: [Point] {
         return
