@@ -9,12 +9,12 @@
 import Foundation
 
 public extension Dictionary {
-    public subscript<RangeType>(_ range: RangeType) -> [Value?]
+    subscript<RangeType>(_ range: RangeType) -> [Value?]
         where RangeType: Collection, RangeType: RangeExpression, RangeType.Element == Key {
             return range.map { self[$0] }
     }
 
-    public subscript<RangeType>(_ range: RangeType, default defaultValue: Value) -> [Value]
+    subscript<RangeType>(_ range: RangeType, default defaultValue: Value) -> [Value]
         where RangeType: Collection, RangeType: RangeExpression, RangeType.Element == Key {
         return range.map { self[$0, default: defaultValue] }
     }

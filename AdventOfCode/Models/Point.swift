@@ -109,8 +109,8 @@ extension Point: Hashable {
         return this.x == that.x && this.y == that.y
     }
 
-    public var hashValue: Int {
-        return y << 16 + x
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(y << 16 + x)
     }
 }
 

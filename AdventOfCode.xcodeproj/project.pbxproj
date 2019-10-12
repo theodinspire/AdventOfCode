@@ -274,7 +274,6 @@
 				A00F593721BD8DF600B1801E /* Sources */,
 				A00F593821BD8DF600B1801E /* Frameworks */,
 				A00F593921BD8DF600B1801E /* Resources */,
-				EC64425E7326B577FDC4011D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,10 +316,11 @@
 				TargetAttributes = {
 					A00F593A21BD8DF600B1801E = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 					};
 					A08590B021B261B300FAD9EB = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -330,6 +330,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A08590A721B261B300FAD9EB;
 			productRefGroup = A08590B221B261B300FAD9EB /* Products */;
@@ -404,28 +405,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC64425E7326B577FDC4011D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AdventOfCodeTests/Pods-AdventOfCodeTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/STRegex/Regex.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Regex.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export EXPANDED_CODE_SIGN_IDENTITY=-\nexport EXPANDED_CODE_SIGN_IDENTITY_NAME=-\n\n\"${SRCROOT}/Pods/Target Support Files/Pods-AdventOfCodeTests/Pods-AdventOfCodeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -490,7 +469,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodinspire.AdventOfCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -509,7 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodinspire.AdventOfCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -659,7 +638,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -687,7 +666,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodinspire.AdventOfCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

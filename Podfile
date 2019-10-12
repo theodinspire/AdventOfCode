@@ -6,7 +6,7 @@ target 'AdventOfCode' do
   use_frameworks!
 
   # Pods for AdventOfCode
-  pod "STRegex", "~> 1.1"
+  pod "STRegex", "~> 2.1"
 
   target 'AdventOfCodeTests' do
     inherit! :search_paths

@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Dictionary where Key == Point {
-    public subscript(_ x: Int, _ y: Int) -> Value? {
+    subscript(_ x: Int, _ y: Int) -> Value? {
         get {
             return self[Point(x: x, y: y)]
         }
@@ -18,7 +18,7 @@ public extension Dictionary where Key == Point {
         }
     }
 
-    public subscript(_ x: Int, _ y: Int, default value: Value) -> Value {
+    subscript(_ x: Int, _ y: Int, default value: Value) -> Value {
         get {
             return self[Point(x: x, y: y), default: value]
         }
@@ -27,7 +27,7 @@ public extension Dictionary where Key == Point {
         }
     }
 
-    public subscript<ARange, AnotherRange>(_ xes: ARange, _ wyes: AnotherRange) -> [Value] where ARange: Collection, ARange: RangeExpression, ARange.Element == Int, AnotherRange: Collection, AnotherRange: RangeExpression, AnotherRange.Element == Int {
+    subscript<ARange, AnotherRange>(_ xes: ARange, _ wyes: AnotherRange) -> [Value] where ARange: Collection, ARange: RangeExpression, ARange.Element == Int, AnotherRange: Collection, AnotherRange: RangeExpression, AnotherRange.Element == Int {
         get {
             return xes.flatMap { x in wyes.map({ y in Point(x: x, y: y) }) }
                 .compactMap { self[$0] }
@@ -36,7 +36,7 @@ public extension Dictionary where Key == Point {
 }
 
 public extension Dictionary where Key == Point, Value: RawRepresentable, Value.RawValue == Character {
-    public func generateMap(defaultingTo null: Value) -> String {
+    func generateMap(defaultingTo null: Value) -> String {
         let (xMax, yMax) = self.keys.reduce((x: Int.min, y: Int.min)) {
                 (Swift.max($0.x, $1.y), Swift.max($0.y, $1.y))
         }
@@ -51,7 +51,7 @@ public extension Dictionary where Key == Point, Value: RawRepresentable, Value.R
 }
 
 public extension Dictionary where Key == Point, Value == Character {
-    public func generateMap(defaultingTo null: Value) -> String {
+    func generateMap(defaultingTo null: Value) -> String {
         let (xMax, yMax) = self.keys.reduce((x: Int.min, y: Int.min)) {
             (Swift.max($0.x, $1.y), Swift.max($0.y, $1.y))
         }

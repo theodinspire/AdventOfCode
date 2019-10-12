@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Int {
-    public var mostSignificantBit: Int {
+    var mostSignificantBit: Int {
         guard self != 0 else { return 0 }
         return 1 << (bitWidth - leadingZeroBitCount - 1)
     }

@@ -1,16 +1,16 @@
 PODS:
-  - STRegex (1.1.0)
+  - STRegex (2.1.0)
 
 DEPENDENCIES:
-  - STRegex (~> 1.1)
+  - STRegex (~> 2.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - STRegex
 
 SPEC CHECKSUMS:
-  STRegex: eb1f4c2fe9e2f0265b8df8634774cd8cd8914018
+  STRegex: dfa420d93d8c1402956233b3879ec1fc14b45fbe
 
-PODFILE CHECKSUM: 73f72225dab301682b2d1e3ae0880ccff4a3c0a6
+PODFILE CHECKSUM: cec87cd6fdcc61209fa6446632efa8e928dfd082
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.1
