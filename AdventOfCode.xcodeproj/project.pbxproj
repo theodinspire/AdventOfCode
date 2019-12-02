@@ -21,12 +21,14 @@
 		A03F130421D25D3100C596D2 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130321D25D3100C596D2 /* Heap.swift */; };
 		A03F130621D296D500C596D2 /* Set+DoesNotContain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130521D296D500C596D2 /* Set+DoesNotContain.swift */; };
 		A03F130821D2973E00C596D2 /* Set+DoesNotContainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F130721D2973E00C596D2 /* Set+DoesNotContainTests.swift */; };
+		A04A9B172395643E00C8FBF6 /* Collection+Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A9B162395643E00C8FBF6 /* Collection+Sum.swift */; };
 		A050F55F21CE68E500CEF605 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050F55E21CE68E500CEF605 /* Instruction.swift */; };
 		A0554CC121C2F927006E2726 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0554CC021C2F927006E2726 /* Heading.swift */; };
 		A05F6A7E21B61905006C85A2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F6A7D21B61905006C85A2 /* Point.swift */; };
 		A067432521B6143C009543B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067432421B6143C009543B6 /* StreamReader.swift */; };
 		A08590B621B261B300FAD9EB /* AdventOfCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A08590B421B261B300FAD9EB /* AdventOfCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A087A51621D416B5001EC530 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087A51521D416B5001EC530 /* Point3D.swift */; };
+		A08B5A6E23955B2F00C6E169 /* Scratch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08B5A6D23955B2F00C6E169 /* Scratch.swift */; };
 		A09A588D21C89A7A00687A78 /* Dictionary+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A588C21C89A7A00687A78 /* Dictionary+Point.swift */; };
 		A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */; };
 		A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */; };
@@ -63,6 +65,7 @@
 		A03F130321D25D3100C596D2 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		A03F130521D296D500C596D2 /* Set+DoesNotContain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+DoesNotContain.swift"; sourceTree = "<group>"; };
 		A03F130721D2973E00C596D2 /* Set+DoesNotContainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+DoesNotContainTests.swift"; sourceTree = "<group>"; };
+		A04A9B162395643E00C8FBF6 /* Collection+Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Collection+Sum.swift"; path = "AdventOfCode/Extensions/Collection+Sum.swift"; sourceTree = SOURCE_ROOT; };
 		A050F55E21CE68E500CEF605 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 		A0554CC021C2F927006E2726 /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
 		A05F6A7D21B61905006C85A2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 		A08590B521B261B300FAD9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08590BC21B261D400FAD9EB /* 2018.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2018.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A087A51521D416B5001EC530 /* Point3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
+		A08B5A6C2395591500C6E169 /* 2019.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2019.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A08B5A6D23955B2F00C6E169 /* Scratch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch.swift; sourceTree = "<group>"; };
 		A09A588C21C89A7A00687A78 /* Dictionary+Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Point.swift"; sourceTree = "<group>"; };
 		A0B3AB7D21B62EEB00C06553 /* Dictionary+Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Counter.swift"; sourceTree = "<group>"; };
 		A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Count.swift"; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 			children = (
 				A0B3AB7F21B62F3900C06553 /* Collection+Count.swift */,
 				A02D483421B6C5EF006D5BC9 /* Collection+Compacted.swift */,
+				A04A9B162395643E00C8FBF6 /* Collection+Sum.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 		A08590A721B261B300FAD9EB = {
 			isa = PBXGroup;
 			children = (
+				A08B5A6C2395591500C6E169 /* 2019.playground */,
 				A08590BC21B261D400FAD9EB /* 2018.playground */,
 				A08590B321B261B300FAD9EB /* AdventOfCode */,
 				A00F593C21BD8DF600B1801E /* AdventOfCodeTests */,
@@ -206,6 +213,7 @@
 				A08590BD21B261EE00FAD9EB /* Input */,
 				A08590B421B261B300FAD9EB /* AdventOfCode.h */,
 				A08590B521B261B300FAD9EB /* Info.plist */,
+				A08B5A6D23955B2F00C6E169 /* Scratch.swift */,
 			);
 			path = AdventOfCode;
 			sourceTree = "<group>";
@@ -427,11 +435,13 @@
 				A0B3AB8221B62F5B00C06553 /* String+Subscripts.swift in Sources */,
 				A087A51621D416B5001EC530 /* Point3D.swift in Sources */,
 				A03F130421D25D3100C596D2 /* Heap.swift in Sources */,
+				A08B5A6E23955B2F00C6E169 /* Scratch.swift in Sources */,
 				A01BB06921B96E0E002FF11D /* Queue.swift in Sources */,
 				A0B3AB8021B62F3900C06553 /* Collection+Count.swift in Sources */,
 				A05F6A7E21B61905006C85A2 /* Point.swift in Sources */,
 				A09A588D21C89A7A00687A78 /* Dictionary+Point.swift in Sources */,
 				A00F593621BD696700B1801E /* Int+Modulo.swift in Sources */,
+				A04A9B172395643E00C8FBF6 /* Collection+Sum.swift in Sources */,
 				A0B3AB7E21B62EEB00C06553 /* Dictionary+Counter.swift in Sources */,
 				A03F130221CE6E3500C596D2 /* Register.swift in Sources */,
 				A006F6C021C15E2C00B4F703 /* Dictionary+RangeIndex.swift in Sources */,
