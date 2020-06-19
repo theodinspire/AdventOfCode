@@ -18,7 +18,7 @@ let cost: (Int) -> Int = { max(($0 / 3) - 2, 0) }
 
 print(input.map(cost).sum())
 
-//: [Next](@next)
+// Part 2
 //let example = [1969, 100756]
 
 func totalCost(_ weight: Int) -> Int {
@@ -36,3 +36,5 @@ func totalCost(_ weight: Int) -> Int {
 //print(example.map(totalCost))
 
 print(input.map(totalCost).sum())
+
+//: [Next](@next)

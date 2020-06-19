@@ -22,4 +22,14 @@ public extension Dictionary where Value == Int {
     func occurences(of item: Key) -> Int {
         return self[item, default: 0]
     }
+
+    func adding(_ that: Counter<Key>) -> Counter<Key> {
+        var this = self
+
+        for (key, value) in that {
+            this[key, default: 0] += value
+        }
+
+        return this
+    }
 }
