@@ -51,7 +51,7 @@ public struct Point {
         return xs.contains(x) && ys.contains(y)
     }
 
-    public func manhattanDistance(from that: Point) -> Int {
+	public func manhattanDistance(from that: Point = Point.origin) -> Int {
         return abs(self.x - that.x) + abs(self.y - that.y)
     }
 
@@ -102,6 +102,38 @@ public struct Point {
         return
             (this.y...that.y).flatMap { y in (this.x...that.x).map { x in Point(x: x, y: y) } }
     }
+
+	public static func ..<(this: Point, that: Point) -> [Point] {
+		return (this...that).filter { $0 != that }
+	}
+
+	public func points(between that: Point, inclusiveAtStart: Bool = true, inclusiveAtEnd: Bool = true) -> [Point] {
+		let (lesser, greater) = Self.orderingPair(self, and: that)
+
+		var points = lesser...greater
+		if (!inclusiveAtStart) {
+			_ = points.removeFirst()
+		}
+		if (!inclusiveAtEnd && self != that) {
+			_ = points.removeLast()
+		}
+
+		return points
+	}
+
+	// Displacement
+	public func moving(_ places: Int, toThe heading: Heading) -> Point {
+		switch heading {
+		case .North:
+			return Point(x: self.x, y: self.y + places)
+		case .East:
+			return Point(x: self.x + places, y: self.y)
+		case .South:
+			return Point(x: self.x, y: self.y - places)
+		case.West:
+			return Point(x: self.x - places, y: self.y)
+		}
+	}
 }
 
 extension Point: Hashable {
